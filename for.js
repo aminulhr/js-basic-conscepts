@@ -2,7 +2,35 @@
     //     console.log(i ,' Rana')
     // }
 
-    const nums = [23,25,6,5,89,89,89,75];
-    for ( let i = 0; i < nums.length; i++){
+    console.log('how to get value from')
+    const nums = [23,25,6,5,89,86,80,75];
+
+    // Array এর last index এর মানঃ Array যত length হয় . তার থেকে এক কম হয়।করণ  Array এর index শুরু হয় জেরো 0 থেকে।
+
+    // for ( let i = 0; i < nums.length; i++){
+    //     console.log(nums[i])
+    // } or 
+
+    for ( let i = 0; i <= nums.length-2; i++){
         console.log(nums[i])
     }
+
+    // উপরেরটাতে i এর সমান না ধরে i এর থেকে কম নেওয়া হয়েছে, তাই ১ বিয়োগ করা হয়নি।  নিচেরটাতে i এর সমান বা কম নেওয়া হয়েছে তাই ১ বিয়োগ েকরা হলো, 1 মাইনাস না করলে ১টি ঘর আনডিফাইন আসবে।
+
+
+    console.log(" Sum of Even and odd numbers");
+const num2 = [54,45,78,65,92,12,35];
+let sumofodd = 0;
+let sumoeven = 0;
+
+for ( let i= 0; i < num2.length; i++){
+    const x = num2[i];
+    if(x%2 ===1 ){
+     sumofodd += x;
+
+    }else{
+        sumoeven += x;
+    }
+}
+console.log(sumoeven)
+console.log(sumofodd)
