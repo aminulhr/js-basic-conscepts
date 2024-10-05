@@ -40,6 +40,13 @@ delete myBio.age
 console.log(myBio)
 
 
+console.log('********* use Loop in object******* ')
+// array এর মধ্যে লুপ চালাতে হলে  of  ব্যবহার করা হয় আর Object এর মধ্যে লুপ চালাতে হলে in ব্যবহার করা হয়।
+ 
+for (key in myBio){
+    // console.log(key)
+    console.log(myBio[key])
+}
 
 
 
