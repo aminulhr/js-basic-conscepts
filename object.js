@@ -12,7 +12,10 @@ const myBio = {
 }
 console.log(myBio)
 console.log(myBio.age)
-let isGroom = myBio.isMarrid;
+
+// Object কে আলাদা ভেরিয়েবলে সেট করা বা রাখা যায় 
+// let isGroom = myBio.isMarrid; or 
+let isGroom = myBio["isMarrid"];
 console.log(isGroom)
 
 
