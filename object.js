@@ -44,10 +44,30 @@ console.log('********* use Loop in object******* ')
 // array এর মধ্যে লুপ চালাতে হলে  of  ব্যবহার করা হয় আর Object এর মধ্যে লুপ চালাতে হলে in ব্যবহার করা হয়।
  
 for (key in myBio){
+    // how to get property name 
     // console.log(key)
+    // how to get value 
     console.log(myBio[key])
 }
 
+
+// ******* Nested objects *****************
+console.log('****** Nested objects ***********')
+const myEdu = {
+    clgName : {
+        firstName : 'Gurudayal',
+        muddleName: 'Gov',
+        lastName: 'collage'
+    },
+    seassion : 2022,
+    subject: ['Bangla', 'English', 'Economics'],
+}
+console.log(myEdu.clgName.lastName)
+console.log(myEdu.subject)
+
+// subject ar value যেহেতু  array আকারে আছে তাই এখানে ইনডেকক্স নাম্বার দিতে হবে।
+console.log(myEdu.subject[0])
+console.log(myEdu.subject[2])
 
 
 
