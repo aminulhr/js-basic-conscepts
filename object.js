@@ -35,8 +35,9 @@ myBio.education = "Honors 3rd year"
 myBio["sub_name"]= "Economics"
 console.log(myBio)
 
-
-
+console.log('*********How to delate property***********')
+delete myBio.age
+console.log(myBio)
 
 
 
